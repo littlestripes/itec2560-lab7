@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Hello Fetch - Where's The ISS?</title>
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+    <!-- custom style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- defer keeps script from executing before everything is loaded -->
+    <script async defer src="fetch.js"></script>
+
+</head>
+<body>
+   
+    <h1>Where is the International Space Station?</h1>
+    <div>Last updated: <span id="last-updated"></span></div>
+    <div>
+        <p>ISS Latitude: <span id="iss-lat"></span></p>
+        <p>ISS Longitude: <span id="iss-long"></span></p>
+    </div>
+
+    <div id="iss-map"></div>
+
+</body>
+</html>
